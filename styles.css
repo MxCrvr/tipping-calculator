@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/* Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+input {
+    outline: none;
+    border: 1px solid #6c6c6c;
+    border-radius: 0.15rem;
+    padding: 0.4rem 0.5rem;
+}
+
+main {
+    padding: 10rem;
+}
+
+/* Bill total */
+.bill-amount-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin: 1rem auto;
+    width: 50%;
+}
+
+
+/* Service evel */
+.service-level-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin: 2rem auto;
+    width: 55%;
+}
+
+.service-select {
+    cursor: pointer;
+    width: 50%;
+    padding: 0.4rem;
+    outline: none;
+}
+
+.custom-tip {
+    display: none;
+    width: 50%;
+}
+
+/* Results */
+.result-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.tip-amount, .bill-total {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.2rem;
+}
+
+.bill-total {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+
+/* Button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.btn {
+    width: 22.5%;
+    padding: 0.5rem 1rem;
+    background-color: #16161d;
+    border: 1px solid #16161d;
+    border-radius: 0.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.btn:hover {
+    background-color: #fff;
+    color: #16161d;
+}
