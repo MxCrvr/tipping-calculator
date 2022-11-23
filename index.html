@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MxCrvr - Tipping Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="bill-amount-container">
+            <label for="bill-amount">Bill Amount</label>
+            <input type="number" name="bill-amount" id="bill-amount" class="bill-amount">
+        </div>
+        
+        <div class="service-level-container">
+            <select name="service-select" id="service-select" class="service-select">
+                <option value="0">Select level of service...</option>
+                <option value="10">Poor: 10%</option>
+                <option value="15">Average: 15%</option>
+                <option value="20">Good: 20%</option>
+                <option value="25">Excellent: 25%</option>
+                <option value="custom">Custom</option>
+            </select>
+            <input type="text" name="custom-tip" id="custom-tip" class="custom-tip" placeholder="Enter a percentage">
+        </div>
+       
+        <div class="result-container" id="result-container">
+            <p class="tip-amount" id="tip-amount"></p>
+            <p class="bill-total" id="bill-total">Bill Total:</p>
+        </div>
+        
+        <div class="button-container">
+            <button id="btn" class="btn">Calculate Total</button>
+        </div>
+    </main>
+   
+</body>
+</html>
