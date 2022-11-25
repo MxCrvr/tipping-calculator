@@ -38,7 +38,7 @@ function getTipAmount() {
 function getCustomTip() {
     let tip = (+billAmount.value / 100) * (+customTip.value);
     tipAmount.innerText = `Tip Amount: ${tip}`;
-    billTotal.innerText = `Bill Total: ${+billAmount.value + tip}`;
+    billTotal.innerText = `Total: ${+billAmount.value + tip}`;
     }
 
 serviceLevel.addEventListener('change', () => {
